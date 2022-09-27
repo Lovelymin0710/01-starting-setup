@@ -4,13 +4,13 @@ import './ExpenseForm.css'
 const ExpenseForm = () => {
 
 
-    const [enteredTitle,setEnterTitle] = useState('');
+    const [enteredTitle,setEnteredTitle] = useState('');
     const [enteredNumber,setEnteredNumber] = useState('');
     const [enteredDate,setEnteredDate] = useState('');
 
 
     const titleChangeHandler = (event) => {
-        setEnterTitle(event.target.value);
+        setEnteredTitle(event.target.value);
     };
 
     const numberChangeHandler = (event) => {
@@ -30,7 +30,7 @@ const ExpenseForm = () => {
             date: new Date(enteredDate)
         };
         console.log(expenseData);
-        setEnterTitle('');
+        setEnteredTitle('');
         setEnteredNumber('');
         setEnteredDate('');
     };
